@@ -3,10 +3,12 @@
 ### Libraries Required:
 1. Tensorflow
 2. Numpy
+3. Matplotlib
+4. PIL
 
 ### Steps to perform data preprocessing, training, building the model and predicting the result:
 
-1. Perform Data Augmentation (creating more data from existing data)
+1. Perform Data Augmentation on fire and smoke images dataset. (creating more data from existing data)
 2. Divide the dataset into training and validation datasets to train and validate the results.
 3. Initialize your CNN model.
 4. Add first layer of CNN with Convolution 2D layer and MaxPool2D layer and set the activation function as Relu.
@@ -17,9 +19,13 @@
 9. Create a checkpoint to observe all the improvements of the model.
 10. Train the model with Adam Optimizer and loss as Binary Entropy for 30 epochs on training and validation datasets.
 11. Load the trained model. 
-12. Predict the model on test data.
+12. Load the test image.
+13. Convert the test image into arrays.
+14. Expand the dimensions of the array.
+15. Predict the model on test image data.
+
 
 
 ### Result
-Achieved the result with 98% accuracy.
+Successfully predicted the image as smoke or fire with 98% accuracy.
 
